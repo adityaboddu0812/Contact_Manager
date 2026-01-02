@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Contact Management App Design System */
+
+@layer base {
+  :root {
+    --background: 200 10% 96%;
+    --foreground: 200 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 10% 15%;
+
+    --primary: 180 25% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 8% 92%;
+    --secondary-foreground: 200 10% 20%;
+
+    --muted: 200 8% 88%;
+    --muted-foreground: 200 8% 45%;
+
+    --accent: 180 30% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 50% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 200 10% 82%;
+    --input: 200 10% 82%;
+    --ring: 180 25% 35%;
+
+    --radius: 0.5rem;
+
+    --shadow-sm: 0 1px 2px 0 hsl(200 10% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(200 10% 15% / 0.1), 0 2px 4px -2px hsl(200 10% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(200 10% 15% / 0.1), 0 4px 6px -4px hsl(200 10% 15% / 0.1);
+
+    --sidebar-background: 200 10% 98%;
+    --sidebar-foreground: 200 10% 25%;
+    --sidebar-primary: 200 10% 12%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 200 8% 94%;
+    --sidebar-accent-foreground: 200 10% 12%;
+    --sidebar-border: 200 10% 88%;
+    --sidebar-ring: 180 25% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .input-focus {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
