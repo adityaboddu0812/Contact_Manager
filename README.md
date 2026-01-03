@@ -44,6 +44,8 @@ The application allows users to add, view, sort, and delete contacts with real-t
 
 ## Project Structure
 
+```bash
+
 Contact_Manager/
 ├── src/ # Frontend React code
 │ ├── components/ # Reusable components
@@ -57,7 +59,7 @@ Contact_Manager/
 │ └── server.js # Express server entry
 ├── package.json
 └── README.md
-
+```
 ---
 
 ##  Deployment
